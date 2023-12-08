@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it -v `pwd`:/tmp -v ~/.config/nvim:/root/.config/nvim -v ~/.cache/nvim:/root/.cache/nvim -v ~/.local/share/nvim:/root/.local/share/nvim $(docker build -q .)
